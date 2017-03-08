@@ -3,7 +3,7 @@ package androidedu.kodluyoruz.kodluyoruzrestaurant;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class UserOneActivity extends AppCompatActivity {
+public class UserThreeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

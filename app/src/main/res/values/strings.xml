@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KodluyoruzRestaurant</string>
+    <string name="baglangic_yemegi">Başlangıç Yemeği</string>
+    <string name="ana_yemek">Ana Yemek</string>
+    <string name="tatli">Tatlı</string>
+    <string name="icecek">İçeçecek</string>
+    <string name="lokantaya_ilet">Lokantaya İlet</string>
 </resources>
