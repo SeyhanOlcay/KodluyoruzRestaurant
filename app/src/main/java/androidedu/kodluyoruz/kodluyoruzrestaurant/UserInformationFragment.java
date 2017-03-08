@@ -117,7 +117,9 @@ public class UserInformationFragment extends Fragment implements View.OnClickLis
             case "2":
                 intent = new Intent(getActivity(), UserThreeActivity.class);
                 break;
-
+            case "3":
+                intent = new Intent(getActivity(), UserDetailActivity.class);
+                break;
             default:
                 intent = null;
                 break;

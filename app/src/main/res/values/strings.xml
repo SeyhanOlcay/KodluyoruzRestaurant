@@ -5,4 +5,5 @@
     <string name="tatli">Tatlı</string>
     <string name="icecek">İçeçecek</string>
     <string name="lokantaya_ilet">Lokantaya İlet</string>
+    <string name="musteri">"Müşteri : "</string>
 </resources>
