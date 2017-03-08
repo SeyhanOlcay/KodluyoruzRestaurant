@@ -1,16 +1,18 @@
 # KodluyoruzRestaurant
 First Commit with Love <3
 
-Kodluyoruz.Org | Android BootCamp 201 Dersi kur arası proje ödevi.
+Kodluyoruz.Org | Android BootCamp 
 
-Bu Proje Ödevi ile Öğrenilmesi hedeflenenler:
+Android 201 Kur Arası Proje Ödevi.
 
-* Activity'ler arasi intent üzerinden veri taşıma.
-* Activity Fragment yapıları ne zaman kullanılacağı.
-* <include> tagı kullanımı.
-* enumaration kullanımı.
-* comment kullanım çeşitlerini görmek.
-* Android Log yapisini öğrenmek.
-* Android resource (res) (style, dimen, string) kullanimi öğrenmek. 
+Bu Proje Ödevi ile Öğrenilmesi Hedeflenenler:
+
+* Activity'ler arası Intent üzerinden veri taşımayı öğretmek.
+* Activity, Fragment yapılarının ne zaman ve nasıl kullanılacağını öğretmek.
+* <include> tagı kullanımını öğretmek
+* enumaration kullanımını öğretmek.
+* comment kullanım çeşitlerini öğretmek.
+* Android Log yapisini öğretmek.
+* Android resource (res) (style, dimen, string) kullanimi öğretmek. 
 
 Not: res kullanimi örnekte yapılmamıştır. Ancak öğrencilerden beklenmektedir.
