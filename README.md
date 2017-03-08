@@ -9,9 +9,9 @@ Bu Proje Ödevi ile Öğrenilmesi Hedeflenenler:
 
 * Activity'ler arası Intent üzerinden veri taşımayı öğretmek.
 * Activity, Fragment yapılarının ne zaman ve nasıl kullanılacağını öğretmek.
-* <include> tagı kullanımını öğretmek
-* enumaration kullanımını öğretmek.
-* comment kullanım çeşitlerini öğretmek.
+* Include tagı kullanımını öğretmek
+* Enumaration kullanımını öğretmek.
+* Comment kullanım çeşitlerini öğretmek.
 * Android Log yapisini öğretmek.
 * Android resource (res) (style, dimen, string) kullanimi öğretmek. 
 
