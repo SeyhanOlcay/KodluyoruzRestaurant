@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_user_one"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="androidedu.kodluyoruz.kodluyoruzrestaurant.UserDetailActivity">
 
-    <include
-        android:id="@+id/activity_userdetail_incViewUserOne"
-        layout="@layout/user_detail_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <include
-        android:id="@+id/activity_userdetail_incViewUserTwo"
-        layout="@layout/user_detail_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <include
+            android:id="@+id/activity_userdetail_incViewUserOne"
+            layout="@layout/user_detail_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
-    <include
-        android:id="@+id/activity_userdetail_incViewUserThree"
-        layout="@layout/user_detail_item"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <include
+            android:id="@+id/activity_userdetail_incViewUserTwo"
+            layout="@layout/user_detail_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <include
+            android:id="@+id/activity_userdetail_incViewUserThree"
+            layout="@layout/user_detail_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
