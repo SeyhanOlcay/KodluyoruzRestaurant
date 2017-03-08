@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context="androidedu.kodluyoruz.kodluyoruzrestaurant.UserOneActivity">
 
+    <!-- Tum user activity'ler ayni fragment'i, "UserInformationFragment"'i icerirler. -->
     <fragment
         android:name="androidedu.kodluyoruz.kodluyoruzrestaurant.UserInformationFragment"
         android:layout_width="match_parent"

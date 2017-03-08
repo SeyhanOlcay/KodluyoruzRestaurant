@@ -31,6 +31,9 @@ public class UserInformationFragment extends Fragment implements View.OnClickLis
         return view;
     }
 
+    /**
+     * Layout dosyamizin icerisindeki yapilari fragment'ımıza baglama islemi yapiliyor.
+     */
     private void initView(View view) {
 
         edtBaslangicYemegi = (EditText) view.findViewById(R.id.user_information_fields_edtBaslangicYemegi);
@@ -42,11 +45,20 @@ public class UserInformationFragment extends Fragment implements View.OnClickLis
         initEvents(btnLokantayaIlet);
     }
 
+    /**
+     * @param btnLokantayaIlet layout icerisindeki butona tiklanma olayi veriliyor.
+     */
     private void initEvents(AppCompatButton btnLokantayaIlet) {
 
         btnLokantayaIlet.setOnClickListener(this);
     }
 
+    /**
+     * Eski bilgileri ve mevcut editText'lerden yeni bilgileri alarak bir sonraki intent'e veriyoruz.
+     *
+     * @param intent    bir sonraki gidecegimiz activity'i iceriyor
+     * @param userIndex bir önceki activity index'ini iceriyor. userOne = 2, userTwo = 3, userThree= 4 | Hep bir fazlasi aliniyor.
+     */
     private void setData(Intent intent, String userIndex) {
 
         if (userIndex.equalsIgnoreCase("")) {
@@ -72,12 +84,19 @@ public class UserInformationFragment extends Fragment implements View.OnClickLis
         intent.putExtra(UserInformation.TATLI.toString() + userIndex, edtTatli.getText().toString());
         intent.putExtra(UserInformation.ICECEK.toString() + userIndex, edtIcecek.getText().toString());
 
+        //ekrana information formatinda bilgi bastiriyoruz.
         Log.i("New Data : " + userIndex, " Başlangıç : " + edtBaslangicYemegi.getText().toString()
                 + " Ana Yemek : " + edtAnaYemek.getText().toString()
                 + " Tatlı : " + edtTatli.getText().toString()
                 + " İçcecek : " + edtIcecek.getText().toString());
     }
 
+    /**
+     * Intent uzerinde yer alan eski bilgileri cekiyoruz ve yeni intent'e ekliyoruz.
+     *
+     * @param intent bir sonraki gidecegimiz activity'i iceriyor
+     * @param index  bir önceki activity index'ini iceriyor. userOne = 2, userTwo = 3, userThree= 4 | Hep bir fazlasi aliniyor.
+     */
     private void getOldData(Intent intent, String index) {
 
         String baslangic = getActivity().getIntent().getExtras().getString(UserInformation.BASLANGIC.toString() + index, "");
@@ -97,6 +116,11 @@ public class UserInformationFragment extends Fragment implements View.OnClickLis
                 + " İçcecek : " + icecek);
     }
 
+    /**
+     * userIndex Degerine gore bir sonraki gidecegi activity'i secer. ve datalari ekleyecek methodlari cagirir.
+     *
+     * @param v basilan butonu "View" olarak geri doner.
+     */
     @Override
     public void onClick(View v) {
 

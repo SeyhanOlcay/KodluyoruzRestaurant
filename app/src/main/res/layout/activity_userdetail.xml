@@ -10,28 +10,33 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!-- user_detail_item.xml icerisindeki verileri toplu olarak ekrana yansitir. -->
         <include
             android:id="@+id/activity_userdetail_incViewUserOne"
             layout="@layout/user_detail_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <!-- Duz bir cizgi gorunmesini saglar.-->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray" />
 
+        <!-- user_detail_item.xml icerisindeki verileri toplu olarak ekrana yansitir. -->
         <include
             android:id="@+id/activity_userdetail_incViewUserTwo"
             layout="@layout/user_detail_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <!-- Duz bir cizgi gorunmesini saglar.-->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray" />
 
+        <!-- user_detail_item.xml icerisindeki verileri toplu olarak ekrana yansitir. -->
         <include
             android:id="@+id/activity_userdetail_incViewUserThree"
             layout="@layout/user_detail_item"

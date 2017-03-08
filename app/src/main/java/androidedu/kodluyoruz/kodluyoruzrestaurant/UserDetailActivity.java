@@ -22,6 +22,9 @@ public class UserDetailActivity extends AppCompatActivity {
         initView();
     }
 
+    /**
+     * Layout dosyamizin icerisindeki yapilari activity'imize baglama islemi yapiliyor.
+     */
     private void initView() {
 
         //userOne
@@ -32,6 +35,7 @@ public class UserDetailActivity extends AppCompatActivity {
         TextView txtTatli1 = (TextView) incViewUserOne.findViewById(R.id.user_detail_item_txtTatli);
         TextView txtIcecek1 = (TextView) incViewUserOne.findViewById(R.id.user_detail_item_txtIcecek);
 
+        //cizdirme isini yapiyoruz.
         initEvent("2", txtUserHeader1, txtBaslangicYemek1, txtAnaYemek1, txtTatli1, txtIcecek1);
 
         //userTwo
@@ -42,6 +46,7 @@ public class UserDetailActivity extends AppCompatActivity {
         TextView txtTatli2 = (TextView) incViewUserTwo.findViewById(R.id.user_detail_item_txtTatli);
         TextView txtIcecek2 = (TextView) incViewUserTwo.findViewById(R.id.user_detail_item_txtIcecek);
 
+        //cizdirme isini yapiyoruz.
         initEvent("3", txtUserHeader2, txtBaslangicYemek2, txtAnaYemek2, txtTatli2, txtIcecek2);
 
         //userThree
@@ -52,9 +57,20 @@ public class UserDetailActivity extends AppCompatActivity {
         TextView txtTatli3 = (TextView) incViewUserThree3.findViewById(R.id.user_detail_item_txtTatli);
         TextView txtIcecek3 = (TextView) incViewUserThree3.findViewById(R.id.user_detail_item_txtIcecek);
 
+        //cizdirme isini yapiyoruz.
         initEvent("4", txtUserHeader3, txtBaslangicYemek3, txtAnaYemek3, txtTatli3, txtIcecek3);
     }
 
+    /**
+     * Enumaration'lara userIndex'i ekleyerek intent üzerinden tasinan verileri alir.
+     *
+     * @param userIndex         userOne = 2, userTwo = 3, userThree= 4 | Hep bir fazlasi aliniyor.
+     * @param txtUserHeader     baslik bilgisi
+     * @param txtBaslangicYemek baslangic yemeği bilgisi
+     * @param txtAnaYemek       anayemek bilgisi
+     * @param txtTatli          tatli bilgisi
+     * @param txtIcecek         icecek bilgisi
+     */
     private void initEvent(String userIndex, TextView txtUserHeader, TextView txtBaslangicYemek,
                            TextView txtAnaYemek, TextView txtTatli, TextView txtIcecek) {
 
